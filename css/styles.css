@@ -59,7 +59,7 @@ button {
 .container {
     max-width: 320px;
     padding: 0 16px;
-    /*margin: 0 auto;*/
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -556,6 +556,10 @@ button {
 
 .our-team-title {
     margin-bottom: 72px;
+    font: 700 36px / 1.11 "Roboto", sans-serif;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
 }
 
 .team-list {
@@ -569,7 +573,8 @@ button {
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
         0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    width: 100%;
+    max-width: 264px;
+    ;
 }
 
 .team-bottom {
@@ -615,4 +620,25 @@ button {
 .profesion {
     text-align: center;
     margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+    .team-list {
+        gap: 64px 24px;
+        justify-content: center
+    }
+
+    .photo-item {
+        flex-basis: calc((100% - 24px) / 2);
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .team-list {
+        gap: 24px;
+    }
+
+    .photo-item {
+        flex-basis: calc((100% - 72px) / 4);
+    }
 }
