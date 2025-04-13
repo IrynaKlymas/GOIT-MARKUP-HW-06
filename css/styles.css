@@ -147,7 +147,7 @@ button {
         margin-right: 120px;
     }
 
-    .navbar {
+    .navbar-link {
         position: relative;
         padding: 24px 0;
         font-weight: 500;
@@ -287,10 +287,12 @@ button {
     justify-content: center;
     align-items: center;
     padding: 0;
+    flex-shrink: 0;
 }
 
 .mob-menu-list {
-    margin-bottom: 24px;
+    margin-bottom: 168px;
+
 }
 
 .mob-menu-item:not(:last-child) {
@@ -308,7 +310,7 @@ button {
 }
 
 .mob-address-list {
-    margin-bottom: 40px;
+    margin-bottom: 48px;
 }
 
 .mob-address-item:not(:last-child) {
@@ -501,6 +503,10 @@ button {
         flex-basis: calc((100% - 24px) / 2);
     }
 
+    .goal-title {
+        text-align: left;
+    }
+
     .goal-title-content {
         text-align: left;
     }
@@ -526,7 +532,6 @@ button {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 24px 100px;
         background-color: #f4f4fd;
         border-radius: 4px;
         border: 1px solid #8e8f99;
@@ -619,12 +624,18 @@ button {
 }
 
 .name-people {
-    margin-bottom: 8px;
+    font: 500 20px / 1.2 "Roboto", sans-serif;
+    letter-spacing: 0.02em;
     text-align: center;
+    color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .profesion {
+    font: 400 16px / 1.5 "Roboto", sans-serif;
+    letter-spacing: 0.02em;
     text-align: center;
+    color: #434455;
     margin-bottom: 8px;
 }
 
@@ -710,8 +721,17 @@ button {
     border-top: none;
 }
 
-.name-service subtitle {
+.name-service {
+    font: 500 20px / 1.2 "Roboto", sans-serif;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
     margin-bottom: 8px;
+}
+
+.place-service text {
+    font: 400 16px / 1.5 "Roboto", sans-serif;
+    letter-spacing: 0.02em;
+    color: #434455;
 }
 
 @media screen and (min-width: 768px) {
@@ -741,8 +761,8 @@ button {
 /*footer*/
 .page-footer {
     background-color: #2e2f42;
-    padding-top: 96px;
-    padding-bottom: 96px;
+    padding: 96px 16px;
+
 }
 
 .container-footer {
@@ -837,6 +857,7 @@ button {
     letter-spacing: 0.02em;
     color: #fff;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .footer-form {
@@ -844,6 +865,10 @@ button {
     align-items: center;
     flex-direction: column;
     gap: 16px;
+}
+
+.footer-label {
+    padding-left: 16px;
 }
 
 .footer-input {
@@ -920,12 +945,18 @@ button {
 }
 
 @media screen and (min-width: 1158px) {
+    .container-footer {
+        flex-wrap: nowrap;
+        align-items: baseline;
+    }
+
     .page-footer {
         padding: 100px 0 100px;
     }
 
     .logo-footer {
         margin-bottom: unset;
+        margin-right: 120px;
     }
 
     .footer-media {
