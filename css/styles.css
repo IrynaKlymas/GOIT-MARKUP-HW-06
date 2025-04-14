@@ -290,9 +290,8 @@ button {
     flex-shrink: 0;
 }
 
-.mob-menu-list {
-    margin-bottom: 168px;
-
+.mob-menu-nav {
+    margin-bottom: auto;
 }
 
 .mob-menu-item:not(:last-child) {
@@ -307,11 +306,10 @@ button {
 
 .mob-address {
     font-style: normal;
-}
-
-.mob-address-list {
     margin-bottom: 48px;
 }
+
+.mob-address-list {}
 
 .mob-address-item:not(:last-child) {
     margin-bottom: 24px;
@@ -761,7 +759,7 @@ button {
 /*footer*/
 .page-footer {
     background-color: #2e2f42;
-    padding: 96px 16px;
+    padding: 96px 0;
 
 }
 
@@ -867,9 +865,7 @@ button {
     gap: 16px;
 }
 
-.footer-label {
-    padding-left: 16px;
-}
+.footer-label {}
 
 .footer-input {
     border: 1px solid #fff;
