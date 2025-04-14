@@ -309,7 +309,7 @@ button {
     margin-bottom: 48px;
 }
 
-.mob-address-list {}
+/*.mob-address-list {}*/
 
 .mob-address-item:not(:last-child) {
     margin-bottom: 24px;
@@ -865,7 +865,7 @@ button {
     gap: 16px;
 }
 
-.footer-label {}
+/*.footer-label {}*/
 
 .footer-input {
     border: 1px solid #fff;
